@@ -1,3 +1,4 @@
+// v2
 export const config = {
   api: {
     bodyParser: false,
