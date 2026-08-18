@@ -1,4 +1,4 @@
-// v2
+// v3
 export const config = {
   api: {
     bodyParser: false,
@@ -28,8 +28,9 @@ export default async function handler(req, res) {
 
     const contentType = req.headers["content-type"] || "audio/m4a";
 
+    // Naya Hugging Face "Inference Providers" URL format + chhota/tez model
     const hfResponse = await fetch(
-      "https://api-inference.huggingface.co/models/openai/whisper-large-v3",
+      "https://router.huggingface.co/hf-inference/models/openai/whisper-small",
       {
         method: "POST",
         headers: {
