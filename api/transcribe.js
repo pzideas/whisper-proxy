@@ -30,7 +30,7 @@ export default async function handler(req, res) {
 
     // Naya Hugging Face "Inference Providers" URL format + chhota/tez model
     const hfResponse = await fetch(
-      "https://router.huggingface.co/hf-inference/models/openai/whisper-small",
+      "https://router.huggingface.co/hf-inference/models/openai/whisper-large-v3",
       {
         method: "POST",
         headers: {
